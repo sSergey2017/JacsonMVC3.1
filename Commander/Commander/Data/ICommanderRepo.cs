@@ -7,6 +7,11 @@ namespace Commander.Data
     {
         IEnumerable<Command> GetAllCommands();
         Command GetCommandById(int id);
+        bool SaveChanges();
+        void CreateCommand(Command cmd);
+        void UpdateCommand(Command cmd);
+        void DeleteCommand(Command cmd);
+
 
     }
 }
